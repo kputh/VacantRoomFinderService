@@ -31,6 +31,9 @@ public class ApplicationConfig extends Application {
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
         resources.add(de.htw_berlin.rz.room_finder.RoomFinderResource.class);
+        resources.add(de.htw_berlin.rz.room_finder.exception_mappers.IOExceptionMapper.class);
+        resources.add(de.htw_berlin.rz.room_finder.exception_mappers.IllegalArgumentExceptionMapper.class);
+        resources.add(de.htw_berlin.rz.room_finder.exception_mappers.PatternSyntaxExceptionMapper.class);
     }
     
 }
